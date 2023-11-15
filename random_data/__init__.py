@@ -1,1 +1,1 @@
-from .client import RandomDataClient
+from .client import BaseClient

@@ -1,11 +1,11 @@
 import requests
 
 
-class RandomDataClient():
+class BaseClient():
     def __init__(self) -> None:
         self.url = 'https://random-data-api.com/api/v2/'
 
-    def _send_request(self, resource: str, size: int) -> str:
+    def _send_request(self, resource: str, size: int = 1) -> str:
         if size > 100:
             raise ValueError('Result size must be 100 or less')
 
