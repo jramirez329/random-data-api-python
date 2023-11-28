@@ -14,6 +14,17 @@ pip3 install random-data-api
 
 ## Usage
 
+Here's an example of how to use the `BaseClient` class and functions:
+
+```python3
+from random_data.client import BaseClient
+
+client = BaseClient()
+
+users = client.get_users(size=2)
+
+print(users)
+```
 
 ## Documentation
 
